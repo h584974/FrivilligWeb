@@ -29,7 +29,6 @@ public class Omregning extends HttpServlet {
 		}
 		catch(Throwable e) {}
 		
-		
 		if(omregn == null || temperaturStr == null || temperaturStr.isEmpty() || (omregn.equalsIgnoreCase("ctilf") && 
 		temperatur < -273.15) || (omregn.equalsIgnoreCase("ftilc") && temperatur < -459.67)) {
 			out.println("<!DOCTYPE html>");
@@ -40,7 +39,9 @@ public class Omregning extends HttpServlet {
 			out.println("<title>feilresultat</title>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("<p>Feil ved omrenging. Temperatur m&aring; v&aelig;re et tall lik eller st&oslash;rre absolutt null, og omregningsmetode m&aring; v&aelig;re valgt</p>");
+			out.println("<p>Feil ved omrenging. Temperatur m&aring; v&aelig;re et tall lik eller st&oslash;rre absolutt null, "
+					+ "og omregningsmetode m&aring; v&aelig;re valgt</p>");
+			out.println("<a href=\"Temperaturomregning.html\">Pr&oslashv igjen<//a>");
 			out.println("</body>");
 			out.println("</html>");
 		}
