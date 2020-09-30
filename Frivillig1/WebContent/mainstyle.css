@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+  background-color: rgb(30,40,70);
+  color: white;
+  font-size: 250%;
+  font-family: cambria;
+}
+
+legend {
+  font-family: fantasy;
+}
+
+input.text {
+	height: 30px;
+	width: 10%;
+	font-size: 70%;
+}
+
+input.radio {
+	height: 25px;
+	width: 25px;
+}
+
+input.submit {
+	height: 40px;
+	font-size: 25px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="mainstyle.css">
+	<meta charset="UTF-8">
+	<title>temperaturomregning</title>
+</head>
+<body>
+	<form action="Omregning" method="post">
+		<fieldset>
+			<legend>Temperaturomregning</legend>
+			<p>Temperatur:&nbsp;&nbsp;<input class="text" type="text" id="temp" name="temp"></p>
+			<label for="CtilF">Celcius til Fahrenheit</label>
+			<input class="radio" type="radio" id="CtilF" name="omregn" value="CtilF">
+			<br>
+			<label for="FtilC">Fahrenheit til Celcius</label>
+			<input class="radio" type="radio" id="FtilC" name="omregn" value="FtilC">
+			<br><br>
+			<input class="submit" type="submit" value="Regn om">
+		</fieldset>
+	</form>
+</body>
+</html>
